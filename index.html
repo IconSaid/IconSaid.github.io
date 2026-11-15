@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal homepage of a first-year IT student at Inha University in Tashkent.">
+  <title>My Homepage | IT Student at Inha University in Tashkent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header and Navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#about" class="logo">
+        <!-- TODO: replace with Saidamir -->
+        Saidamir
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navList" aria-label="Open menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+
+        <ul class="nav-list" id="navList">
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#courses" class="nav-link">My Courses</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle light/dark mode">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== About Me ===== -->
+    <section class="section hero" id="about">
+      <div class="container">
+        <p class="eyebrow">Hello, welcome to my homepage</p>
+        <h1>I'm a first-year <span class="accent">IT student</span></h1>
+        <p class="lead">
+          I study Information Technology at Inha University in Tashkent. I'm interested in
+          programming, artificial intelligence and technology, and I'm building my skills one
+          project at a time.
+        </p>
+
+        <ul class="tags" aria-label="Interests">
+          <li>Programming</li>
+          <li>Artificial Intelligence</li>
+          <li>Technology</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== My Courses ===== -->
+    <section class="section" id="courses">
+      <div class="container">
+        <h2 class="section-title">My Courses</h2>
+        <p class="section-intro">The subjects I'm studying in my first year.</p>
+
+        <div class="grid grid-4">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Programming</h3>
+            <p>Learning how to write code and solve problems step by step, including C++.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📐</div>
+            <h3>Mathematics</h3>
+            <p>Building the mathematical foundation that supports computer science.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚛️</div>
+            <h3>Physics</h3>
+            <p>Understanding the physical principles behind how the world and technology work.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌐</div>
+            <h3>Introduction to IT</h3>
+            <p>Getting an overview of computers, networks and the IT field as a whole.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">
+          These are student projects created as part of my university studies.
+        </p>
+
+        <div class="grid grid-2">
+          <article class="card project">
+            <span class="badge">Student Project</span>
+            <h3>C++ Programming Exercises</h3>
+            <p>
+              A collection of programming exercises I wrote in C++ while learning the
+              fundamentals of programming.
+              <!-- TODO: add details, e.g. topics covered -->
+            </p>
+            <ul class="tags tags-small">
+              <li>C++</li>
+              <li>Exercises</li>
+            </ul>
+            <!-- TODO: replace "#" with a link to your code (e.g. GitHub) -->
+            <a href="#" class="card-link">View code (link coming soon)</a>
+          </article>
+
+          <article class="card project">
+            <span class="badge">University Assignment</span>
+            <h3>Network Detective</h3>
+            <p>
+              A university assignment created as part of my IT studies.
+              <!-- TODO: describe what the assignment involved -->
+            </p>
+            <ul class="tags tags-small">
+              <li>Networking</li>
+              <li>Assignment</li>
+            </ul>
+            <!-- TODO: replace "#" with a link to your work -->
+            <a href="#" class="card-link">View project (link coming soon)</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">Feel free to get in touch with me.</p>
+
+        <div class="contact-card">
+          <div>
+            <h3>Email</h3>
+            <!-- TODO: replace both occurrences of this placeholder with your real email -->
+            <p><a href="mailto:your.email@example.com" class="email-link">your.email@example.com</a></p>
+          </div>
+          <a href="mailto:your.email@example.com" class="btn btn-primary">Send an email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Saidamir. First-year IT student at Inha University in Tashkent.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
